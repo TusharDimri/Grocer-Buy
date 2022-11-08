@@ -13,12 +13,12 @@
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link"> USD </a>
+                        <a href="#" class="nav-link"> INR </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li><a href="#" class="nav-link"> <i class="fa fa-envelope"></i> Email </a></li>
-                    <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
+                    <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call Us </a></li>
                 </ul> <!-- list-inline //  -->
             </div> <!-- navbar-collapse .// -->
         </div> <!-- container //  -->
@@ -47,9 +47,9 @@
                 </div> <!-- col.// -->
                 <a href="{% url 'store' %}" class="btn btn-outline-primary">Store</a>
                 <div class="col-lg  col-md-6 col-sm-12 col">
-                    <form action="#" class="search">
+                    <form action="{% url 'search' %}" class="search" method="GET">
                         <div class="input-group w-100">
-                            <input type="text" class="form-control" style="width:60%;" placeholder="Search">
+                            <input type="text" class="form-control" style="width:60%;" placeholder="Search" name="keyword">
 
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="submit">
